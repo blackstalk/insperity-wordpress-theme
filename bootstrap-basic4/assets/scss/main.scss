@@ -1,0 +1,360 @@
+// Google Fonts
+@import url(http://fonts.googleapis.com/css?family=Roboto+Slab:300,400,700|Open+Sans:400italic,700italic,400,700|Roboto:300,400,500,700);
+
+// Font Variables
+$roboto: 'Roboto', sans-serif;
+$roboto-slab: 'Roboto Slab', serif;
+$open-sans: 'Open Sans', sans-serif;
+
+// Colors
+$dark-grey: #333333;
+$light-grey: #eeeeee;
+$medium-grey: #999999;
+$secondary-grey: #f0f0f0;
+$dark-blue: #006595;
+$medium-blue: #016699;
+$secondady-blue: #005e86;
+$medium-green: #349946;
+$dark-green: #4c8c2b;
+
+@mixin placeholder {
+  &::-webkit-input-placeholder {@content}
+  &:-moz-placeholder           {@content}
+  &::-moz-placeholder          {@content}
+  &:-ms-input-placeholder      {@content}
+}
+
+// Styles
+header {
+  height: 98px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0px 0px 10px 10px rgba(0,0,0,0.05);
+
+  .cta-top {
+    font-family: $roboto;
+    color: $dark-grey;
+    font-size: 17px;
+    line-height: 17px;
+  }
+  .cta-number {
+    font-family: $roboto-slab;
+    color: $dark-blue;
+    font-size: 30px;
+    font-weight: 400;
+
+    img {
+      margin-top: -5px;
+    }
+  }
+}
+
+section.top-section {
+  h1 {
+    font-family: $roboto-slab;
+    font-size: 42px;
+    color: $medium-blue;
+    margin-top: 50px;
+  }
+  h2 {
+    color: $medium-green;
+    font-family: $roboto-slab;
+    font-size: 30px;
+  }
+  .main-lead-text {
+    font-family: $roboto;
+    color: $dark-grey;
+    font-size: 22px;
+    margin-top: 30px;
+  }
+  .main-list {
+    margin-top: 30px;
+    padding-left: 20px;
+
+    li {
+      margin-top: 15px;
+      font-size: 30px;
+
+      span {
+        font-size: 18px;
+        display: block;
+      }
+    }
+    .main-list-title {
+      color: $dark-grey;
+      font-size: 18px;
+      font-family: $roboto;
+      font-weight: 700;
+    }
+    .main-list-sub {
+      color: $dark-grey;
+      font-size: 18px;
+      font-family: $roboto;
+      font-weight: 300;
+      margin-top: 10px;
+    }
+  }
+  .main-arrow-box {
+    .fill-form-cta {
+      font-size: 22px;
+      font-family: $roboto;
+      color: $dark-blue;
+      margin-top: 30px;
+    }
+  }
+
+  // Side Ebook form
+  .ebook-box {
+    background-color: $dark-green;
+    padding: 25px;
+    position: relative;
+
+    .green-arrow {
+      z-index: 1;
+      width: 97px;
+      height: 19px;
+      left: 20%;
+      bottom:-14px;
+      position: absolute;
+    }
+
+    .ebook-title {
+      color: #fff;
+      font-size: 22px;
+      font-family: $roboto;
+      margin-top: 10px;
+      line-height: 24px;
+    }
+  }
+
+  .form-box {
+    background-color: $secondary-grey;
+    padding: 20px 17px 17px 17px;
+    -webkit-box-shadow:inset 0px 0px 0px 1px #c9c7c7;
+    -moz-box-shadow:inset 0px 0px 0px 1px #c9c7c7;
+    box-shadow:inset 0px 0px 0px 1px #c9c7c7;
+
+    .form-group {
+      margin-bottom: 7px;
+
+      label {
+        font-family: $roboto;
+        font-size: 14px;
+        color: #000;
+        margin-bottom: 3px;
+      }
+    }
+
+    .form-respone-field {
+      margin-top: 10px;
+      color: #000;
+      font-family: $roboto;
+      font-size: 14px;
+    }
+
+    .form-control {
+      padding: 5px 10px;
+      -webkit-box-shadow: inset 2px 2px 5px 0px rgba(0,0,0,0.28);
+      -moz-box-shadow: inset 2px 2px 5px 0px rgba(0,0,0,0.28);
+      box-shadow: inset 2px 2px 5px 0px rgba(0,0,0,0.28);
+      color: #000;
+      font-size: 14px;
+
+      @include placeholder {
+          color: $medium-grey;
+      }
+    }
+
+    .btn-ebook {
+      margin-top: 15px;
+      font-size: 18px;
+      border:1px solid #CE9A01;
+      -webkit-box-shadow: #FFF563 0px 1px 0px inset;
+      -moz-box-shadow: #FFF563 0px 1px 0px inset;
+      box-shadow: #FFF563 0px 1px 0px inset;
+      -webkit-border-radius: 2px;
+      -moz-border-radius: 2px;
+      border-radius: 2px;
+      font-family:arial, helvetica, sans-serif;
+      padding: 10px 7px 10px 7px;
+      text-decoration:none;
+      display:inline-block;
+      text-shadow: 0px 1px 0 rgba(255,255,255,0.44);
+      font-weight:bold;
+      color: $dark-grey;
+      background-color: #FED400; background-image: -webkit-gradient(linear, left top, left bottom, from(#FED400), to(#edb100));
+      background-image: -webkit-linear-gradient(top, #FED400, #edb100);
+      background-image: -moz-linear-gradient(top, #FED400, #edb100);
+      background-image: -ms-linear-gradient(top, #FED400, #edb100);
+      background-image: -o-linear-gradient(top, #FED400, #edb100);
+      background-image: linear-gradient(to bottom, #FED400, #edb100);filter:progid:DXImageTransform.Microsoft.gradient(GradientType=0,startColorstr=#FED400, endColorstr=#edb100);
+    }
+    .btn-ebook:hover {
+      border:1px solid #CE9A01;
+      background-color: #FFC92B; background-image: -webkit-gradient(linear, left top, left bottom, from(#FFC92B), to(#CE9A01));
+      background-image: -webkit-linear-gradient(top, #FFC92B, #CE9A01);
+      background-image: -moz-linear-gradient(top, #FFC92B, #CE9A01);
+      background-image: -ms-linear-gradient(top, #FFC92B, #CE9A01);
+      background-image: -o-linear-gradient(top, #FFC92B, #CE9A01);
+      background-image: linear-gradient(to bottom, #FFC92B, #CE9A01);filter:progid:DXImageTransform.Microsoft.gradient(GradientType=0,startColorstr=#FFC92B, endColorstr=#CE9A01);
+    }
+
+    .form-footer-text {
+      color: #000;
+      font-family: $roboto;
+      font-size: 14px;
+      margin-top: 10px;
+    }
+
+
+  }
+}
+
+section.about-section {
+  width: 100%;
+  background: linear-gradient(90deg, #bab9af 50%, $light-grey 50%);
+  margin-top: 60px;
+
+  .about-outer {
+    margin-left: 30px;
+  }
+
+  h2 {
+    font-family: $roboto-slab;
+    color: $secondady-blue;
+    font-size: 35px;
+    margin-top: 60px;
+  }
+
+  .about-lead {
+    color: $dark-grey;
+    font-family: $roboto;
+    font-size: 22px;
+    margin-top: 30px;
+  }
+
+  .about-list {
+    margin-top: 30px;
+    padding-left: 25px;
+
+    li {
+      font-size: 30px;
+      line-height: 25px;
+      span {
+        color: $dark-grey;
+        font-size: 18px;
+        font-family: $roboto;
+        font-weight: 700;
+      }
+    }
+  }
+
+  .about-image-col {
+    background-image: url(/wp-content/themes/bootstrap-basic4/assets/img/people-image.png);
+    background-position: center center;
+    background-size: cover;
+  }
+
+  .about-services-link {
+    margin-top: 30px;
+    margin-bottom: 60px;
+
+    a {
+      color: $medium-blue;
+      font-size: 16px;
+      font-family: $roboto;
+      text-decoration: none;
+      transition: 1s ease all;
+    }
+    a:hover {
+      text-decoration: underline;
+      color: #000;
+    }
+  }
+}
+
+section.clients-section {
+  padding-top: 60px;
+  padding-bottom: 60px;
+
+  h3 {
+    font-weight: 400;
+    font-size: 22px;
+    font-family: $roboto;
+    color: $dark-grey;
+  }
+
+  .client-logos-row {
+    margin-top: 30px;
+  }
+}
+
+footer {
+  background-color: $light-grey;
+  padding-top: 40px;
+  padding-bottom: 40px;
+
+  .footer-left, .footer-right {
+    font-size: 18px;
+    font-family: $roboto;
+    color: $dark-grey;
+  }
+}
+
+/* Media Queries */
+@media (max-width: 992px) {
+  .arrow-col {
+    display: none !important;
+  }
+  .fill-form-cta {
+    text-align: center;
+    margin-bottom: 30px;
+  }
+  section.top-section .ebook-box .green-arrow {
+    left: 50%;
+    margin-left: -47px;
+  }
+  section.about-section {
+    background: $light-grey !important;
+  }
+  .about-image-col {
+    background-position: top center !important;
+    text-align: center !important;
+    min-height: 400px;
+
+  }
+
+}
+
+@media (max-width: 768px) {
+  .footer-left, .footer-right {
+    text-align: center !important;
+    width: 100% !important;
+  }
+}
+
+@media (max-width: 576px) {
+  section.top-section h1 {
+    margin-top: 20px !important;
+  }
+  .mobile-number {
+    margin-top: 50px;
+    .cta-top {
+      font-family: $roboto;
+      color: $dark-grey;
+      font-size: 17px;
+      line-height: 17px;
+    }
+    .cta-number {
+      font-family: $roboto-slab;
+      color: $dark-blue;
+      font-size: 30px;
+      font-weight: 400;
+
+      img {
+        margin-top: -5px;
+      }
+    }
+  }
+}
